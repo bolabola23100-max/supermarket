@@ -35,8 +35,8 @@ class SupermarketGame extends FlameGame {
     add(
       SpriteComponent(
         sprite: shelfSprite,
-        position: Vector2(200, 100),
-        size: Vector2(300, 281),
+        position: Vector2(100, 50),
+        size: Vector2(200, 181),
       ),
     );
   }
