@@ -27,10 +27,11 @@ class SupermarketGame extends FlameGame {
       ),
     );
 
-    // تحميل صورة الرف وإضافتها للمشهد.
+    // تحميل صورة الرف من المسار النسبي لمجلد assets/images.
     final shelfSprite = await loadSprite(
-      'assets/images/furniture/shelves/supermarket_shelf.png',
+      'furniture/shelves/supermarket_shelf.png',
     );
+
     add(
       SpriteComponent(
         sprite: shelfSprite,
