@@ -40,15 +40,17 @@ class SupermarketGame extends FlameGame {
       ),
     );
 
-    // تحميل المنتج ووضعه فوق الرف.
-    final productSprite = await loadSprite('products/potl.png');
+    // تحميل صورة الإزازة ووضع 5 إزازات داخل الرف.
+    final bottleSprite = await loadSprite('products/potl.png');
 
-    add(
-      SpriteComponent(
-        sprite: productSprite,
-        position: Vector2(145, 85),
-        size: Vector2(35, 35),
-      ),
-    );
+    for (int i = 0; i < 5; i++) {
+      add(
+        SpriteComponent(
+          sprite: bottleSprite,
+          position: Vector2(115 + (i * 34), 95),
+          size: Vector2(25, 35),
+        ),
+      );
+    }
   }
 }
